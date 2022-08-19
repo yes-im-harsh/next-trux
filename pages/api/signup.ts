@@ -45,4 +45,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       secure: process.env.NODE_ENV === "production",
     })
   );
+
+  res.json(user);
 };
